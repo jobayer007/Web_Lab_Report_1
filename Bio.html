@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+    <link rel="stylesheet" href="bio.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My Bio Data</h2>
+        <form>
+            <label class="required">Full Name</label>
+            <input type="text" name="fullname" required placeholder="Enter your full name">
+
+            <label>Father's Name</label>
+            <input type="text" name="father" required placeholder="Enter your father's name">
+
+            <label>Mother's Name</label>
+            <input type="text" name="mother" required placeholder="Enter your mother's name">
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender</label>
+            <div class="flex-row section">
+                <div><input type="radio" name="gender" value="male"> Male</div>
+                <div><input type="radio" name="gender" value="female"> Female</div>
+                <div><input type="radio" name="gender" value="other"> Other</div>
+            </div>
+
+            <label>Address</label>
+            <textarea name="address" rows="3" required placeholder="Enter your address"></textarea>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required placeholder="Enter your phone number">
+
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="Enter your email address">
+
+            <label>LinkedIn</label>
+            <input type="text" name="linkedin" placeholder="Enter your LinkedIn profile URL">
+
+            <label>GitHub</label>
+            <input type="text" name="github" placeholder="Enter your GitHub profile URL">
+
+            <label>Education</label>
+            <textarea name="education" rows="3" placeholder="Enter your educational qualifications"></textarea>
+
+            <label>Skills</label>
+            <textarea name="skills" rows="3" placeholder="Enter your skills"></textarea>
+
+            <label>Languages Known</label>
+            <input type="text" name="languages" placeholder="Enter languages you know">
+
+            <label>Marital Status</label>
+            <div class="flex-row section">
+                <div><input type="radio" name="married" value="yes"> Married</div>
+                <div><input type="radio" name="married" value="no"> Unmarried</div>
+            </div>
+
+            <label>Hobbies</label>
+            <div class="flex-row section">
+                <div><input type="checkbox" name="hobby" value="reading"> Reading</div>
+                <div><input type="checkbox" name="hobby" value="writing"> Writing</div>
+                <div><input type="checkbox" name="hobby" value="traveling"> Traveling</div>
+                <div><input type="checkbox" name="hobby" value="gaming"> Gaming</div>
+                <div><input type="checkbox" name="hobby" value="cooking"> Cooking</div>
+                <div><input type="checkbox" name="hobby" value="music"> Music</div>
+                <div><input type="checkbox" name="hobby" value="sports"> Sports</div>
+                <div><input type="checkbox" name="hobby" value="drawing"> Drawing</div>
+                <div><input type="checkbox" name="hobby" value="photography"> Photography</div>
+                <div><input type="checkbox" name="hobby" value="blogging"> Blogging</div>
+            </div>
+
+            <label>Blood Group</label>
+            <select name="bloodgroup">
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label>Personal Website</label>
+            <input type="url" name="website" placeholder="https://JobayerAhmed.com">
+
+            <div class="section research-section">
+                <h3>Research Section</h3>
+                
+                <div class="research-grid">
+                    <div class="research-item">
+                        <label class="research-label">Research Interests</label>
+                        <textarea name="research_interests" rows="3" placeholder="Enter your research interests"></textarea>
+                    </div>
+                    
+                    <div class="research-item">
+                        <label class="research-label">Publications</label>
+                        <textarea name="publications" rows="3" placeholder="List your publications"></textarea>
+                    </div>
+                
+                    <div class="research-item full-width">
+                        <label class="research-label">Current Research Projects</label>
+                        <div class="flex-row">
+                            <div>
+                                <input type="text" name="project_title" placeholder="Project Title">
+                            </div>
+                            <div>
+                                <input type="text" name="project_role" placeholder="Your Role">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="research-item">
+                        <label class="research-label">Research Grants</label>
+                        <textarea name="grants" rows="2" placeholder="List any research grants received"></textarea>
+                    </div>
+                    
+                    <div class="research-item">
+                        <label class="research-label">Academic Affiliations</label>
+                        <input type="text" name="affiliations" placeholder="Enter your academic affiliations">
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Submit Bio Data" class="submit-btn">
+                <input type="reset" value="Reset Form" class="submit-btn reset-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
